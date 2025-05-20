@@ -1,0 +1,45 @@
+{
+  "name": "oauth_login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "generate": "drizzle-kit generate:pg",
+    "migrate": "node src/db/migrate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeowHaerin3/oauth_login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MeowHaerin3/oauth_login/issues"
+  },
+  "homepage": "https://github.com/MeowHaerin3/oauth_login#readme",
+  "dependencies": {
+    "@redis/client": "^5.0.1",
+    "bcrypt": "^6.0.0",
+    "connect-redis": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.16.0",
+    "redis": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.2",
+    "drizzle-kit": "^0.31.1",
+    "nodemon": "^3.1.10"
+  }
+}
